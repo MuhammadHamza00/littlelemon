@@ -1,0 +1,576 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  position:sticky;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-family: "Markazi Text";
+  font-size: 18pt;
+  font-weight: 500;
+  color: #1E1E1E;
+}
+.items a{
+  color: #495E57;
+  font-size: xx-large;
+  text-decoration: none;
+}
+.items a:hover {
+  color: #F4CE14;
+}
+
+
+.area a{
+  color: white;
+  text-decoration: none;
+}
+.area a:hover {
+  color: #F4CE14;
+}
+.area h2:hover{
+  color: #F4CE14;
+  cursor: pointer;
+}
+.items {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+#ham{
+  display:none;
+}
+
+/* form area */
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #495E57;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  font-family: "Markazi Text";
+
+}
+
+.content h1 {
+  color: #F4CE14;
+  font-size: 48pt;
+
+  font-style: bold;
+  margin: 0;
+}
+
+.content p {
+  color: white;
+  font-family: "Karla Regular";
+  font-size: 18pt;
+  line-height: 1.5;
+}
+
+.content address h2 {
+  color: white;
+  font-style: bold;
+}
+
+.content #bookTable {
+  width: 244px;
+  height: 72px;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-size: 18pt;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+}
+
+#bookTable:hover {
+  background-color: #FBDABB;
+}
+
+.form>img {
+  max-width: 50%;
+  height: auto;
+  padding: 2.5rem;
+  border-radius: 5rem;
+}
+
+/* Special */
+.special {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  font-family: "Markazi Text";
+
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#onlineRes {
+  width: 244px;
+  height: 72px;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-size: 18pt;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+}
+
+#onlineRes:hover {
+  background-color: #FBDABB;
+}
+
+.head h1 {
+  color: #495E57;
+  font-size: 48pt;
+  font-style: bold;
+  margin: 0;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  margin: 1rem;
+  background-color: #FBDABB;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item h1 {
+  color: #EE9972;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 18pt;
+}
+
+.item p {
+  padding: 1rem;
+  font-size: 16pt;
+  font-family: "Karla Regular";
+}
+
+.item h3 {
+  padding: 1rem;
+  font-size: 18pt;
+}
+
+/* Reviews */
+.review {
+  background-color: #495E57;
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.review h1 {
+  font-size: 48pt;
+  color: #F4CE14;
+}
+
+.review_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: aliceblue;
+  margin: 10px;
+  border-radius: 16px;
+}
+
+.stars i {
+  color: #F4CE14;
+  font-size: 40pt;
+  margin-left: 0.5rem;
+}
+
+.review_card img {
+  width: 15rem;
+  height: 15rem;
+}
+.review_card p{
+  margin: 0;
+
+}
+
+/* about */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.contain {
+  padding-top: 1rem;
+}
+
+.contain h1 {
+  color: #F4CE14;
+  font-size: 48pt;
+  font-style: bold;
+  margin: 0;
+}
+
+.contain p {
+  color: #495E57;
+  font-family: "Karla Regular";
+  font-size: 18pt;
+  line-height: 1.5;
+  padding-right: 5rem;
+}
+
+.contain address h2 {
+  color: #495E57;
+  font-style: bold;
+}
+
+.imgcontain {
+  position: relative;
+  background: url("./Assets/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem;
+  height: auto;
+
+}
+
+.top-image {
+  position: relative;
+  width: 79%;
+  height: auto;
+  /* Make sure the images take the full width of the container */
+  bottom: 0;
+  right: 5rem;
+  top: 10rem;
+  overflow: visible;
+}
+
+
+/* Footer */
+footer {
+  background-color: #495E57;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+
+footer img {
+  width: 15%;
+  height: 15%;
+  margin: 1rem;
+}
+
+.area {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 1rem;
+  flex-grow: 1;
+
+}
+
+.area h1 {
+  color: #F4CE14;
+  font-size: 30pt;
+  font-family: "Markazi Text";
+
+}
+
+.area h2 {
+  color: white;
+  font-size: 18pt;
+  font-family: "Karla Regular";
+
+}
+
+
+
+@media (max-width: 688px) {
+  .menuItems {
+    flex-direction: column;
+  }
+  .about{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .imgcontain{
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .content #bookTable {
+    width: 144px;
+    height: 42px;
+    font-size: 9;
+  }
+  #onlineRes {
+    width: 144px;
+    height: 42px;
+    font-size: 9pt;
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .form>img {
+    display:none;
+  }
+
+  .special {
+    max-width:max-content;
+  }
+  
+
+  .review {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .area {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1570px) {
+  .imgcontain {
+    max-height: 20%;
+  }
+}
+
+
+/* BookForm */
+.whole{
+  display: flex;
+  flex-direction: column;
+  background: url("./Assets//restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+}
+hr{
+  width: 100%;
+}
+.slider{
+  display: block;
+  border:1px solid red;
+}
+.slider img{
+  width: 100%;
+}
+.container{
+  display: flex;
+  padding-left: 25%;
+  padding-right: 25%;
+  flex-direction: column;
+}
+#dataform{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+#dataform label{
+  color: #282c34;
+  font-size: 16pt;
+  font-style: bolder;
+  font-size: larger;
+}
+#dataform input ,select{
+  border: none;
+  background-color: aliceblue;
+  padding: 1rem;
+  width: 100%;
+  font-size: 18pt;
+  color: #495E57;
+  border: 1px solid aliceblue;
+  outline: none;
+}
+#dataform input:hover{
+  border: 1px solid #495E57;
+  background-color: aliceblue;
+  color: #495E57;
+}
+#dataform input:active{
+  border: 1px solid #495E57;
+  background-color: aliceblue;
+  color: #495E57;
+}
+#dataform select option{
+  background-color: #495E57;
+  color: white;
+}
+#dataform select.custom-select {
+  appearance: none; /* Remove default styles on some browsers */
+  background-image: url('./Assets/Dish\ icon.svg'); /* Set the icon as the background image */
+  background-repeat: no-repeat;
+  background-position: left; /* Adjust the position of the icon */
+  background-size: 35px 35px; /* Set the size of the icon */
+  border: none;
+  background-color: aliceblue;
+  padding: 1rem;
+  width: 100%;
+  font-size: 18pt;
+  color: #495E57;
+  border: 1px solid aliceblue;
+  outline: none;
+  padding-left: 3rem;
+}
+#dataform button{
+  width: 244px;
+  height: 72px;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-size: 18pt;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  margin: 1rem;
+  align-self: center;
+}
+#dataform button:hover{
+  background-color: #495E57;
+  color: white;
+}
+#dataform button:disabled{
+  background-color: grey;
+  color: white;
+}
+@media (max-width:500px) {
+  #dataform button{
+    width: 150px;
+    height: 36px;
+    font-size: 9pt;
+  }
+}
+
+
+
+h1 {
+  color: #88B04B;
+font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+font-weight: 900;
+font-size: 40px;
+margin-bottom: 10px;
+}
+p {
+  color: #404F5E;
+font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+font-size:20px;
+margin: 0;
+}
+i {
+  color: #9ABC66;
+font-size: 100px;
+line-height: 200px;
+margin-left:-15px;
+}
+.card {
+  background: white;
+padding: 60px;
+border-radius: 4px;
+box-shadow: 0 2px 3px #C8D0D8;
+display: inline-block;
+margin: 0 auto;
+
+}
+.card{
+  display: flex;justify-content: center;
+  align-items: center;
+}
